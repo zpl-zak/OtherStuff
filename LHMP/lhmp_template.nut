@@ -2,6 +2,7 @@
 //								FORWARDED GLOBAL VARIABLES
 //=============================================================================
 local mainGamemode = null;
+local GM = null;
 
 //=============================================================================
 //								CLASSES
@@ -188,6 +189,7 @@ function onServerInit()
 		iniGetParam(mainGamemodeConfigFile, "AdminPassword", "guwno"),
 		serverGetMaxPlayers()
 	);
+	GM = mainGamemode;
 	
 	print("\n\n\n\n");
 	print("+=========================================+");
